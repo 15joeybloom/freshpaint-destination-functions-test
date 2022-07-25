@@ -15,6 +15,8 @@ const endpoint = 'https://eoljbqkyhjkuc13.m.pipedream.net';
  * Handle track event
  */
 async function onTrack(event, settings) {
+  const bigqueryClient = new google.cloud.bigquery.BigQuery();
+
   await fetch(endpoint, {
     method: 'POST',
     headers: {
