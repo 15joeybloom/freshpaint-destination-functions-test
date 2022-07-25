@@ -15,6 +15,7 @@ const endpoint = 'https://eoljbqkyhjkuc13.m.pipedream.net';
  * Handle track event
  */
 async function onTrack(event, settings) {
+  console.log(_.defaults({ 'a': 1  }, { 'a': 3, 'b': 2 }));
   await fetch(endpoint, {
     method: 'POST',
     headers: {
